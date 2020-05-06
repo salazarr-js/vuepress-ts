@@ -12,7 +12,7 @@ npm run dev
 
 ## Commits as `steps`
 
-### [Initial commit](https://github.com/salazarr-js/vuepress-ts/commit/cd5be2edecff6a09b6bfbd973100d69eb939d75b)
+### 🔥 [Initial commit](https://github.com/salazarr-js/vuepress-ts/commit/cd5be2edecff6a09b6bfbd973100d69eb939d75b)
 
 1. Create this `readme.md`
 2. Add scripts to `package.json`
@@ -30,9 +30,7 @@ module.exports = {
 }
 ```
 
----
-
-### Typescript plugin
+### 👨‍💻 [Typescript plugin](https://github.com/salazarr-js/vuepress-ts/commit/2ef25e9285cf86df68c5e6c1cbd0f5d47bd73a93)
 
 Following the [vuepress-plugin-typescript](https://vuepress.github.io/en/plugins/typescript/#installation) docs.
 
@@ -52,7 +50,7 @@ module.exports = {
 
 3. Add some `typescript` script in `readme.md`
 
-```markdown
+```html
 {{ msg }}
 
 <script lang="ts">
@@ -66,15 +64,35 @@ export default Vue.extend({
 </script>
 ```
 
-4. Wild error appears
+4. Wild error appears 🤯
 
 ![error screenshot](./screenshot.png)
 
 > Same error if there is a `<script lang="ts">` in a `.vue`
 
+
+### 🔨 Workaround
+
+To make it works just:
+
+1. Add any `.ts` file in folder
+  > For example `.vuepress/enhanceApp.ts`
+2. Add a `tsconfig.json` with at least `include` file paths
+```json
+{
+  "include": [
+    ".vuepress/**/*.ts",
+    ".vuepress/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+```
+
 ---
 
-{{ msg }}
+### {{ msg }} 🎉🍻
 
 <script lang="ts">
 import Vue from 'vue'
