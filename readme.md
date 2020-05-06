@@ -71,7 +71,7 @@ export default Vue.extend({
 > Same error if there is a `<script lang="ts">` in a `.vue`
 
 
-### 🔨 Workaround
+### 🔨 [Workaround](https://github.com/salazarr-js/vuepress-ts/commit/2687d1d0722c8e54adab78919597178db1b89c69)
 
 To make it works just:
 
